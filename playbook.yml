@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: Update apt
-      shell: sudo apt update
+      shell: sudo apt-get update
     - name: Install Docker
       apt:
         name:
