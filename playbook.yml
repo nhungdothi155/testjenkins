@@ -14,7 +14,6 @@
           - docker-buildx-plugin
           - docker-compose-plugin
         state: present
-        update_cache: 'yes'
     - name: Login DockerHub
       shell: docker login -u "{{DOCKER_USERNAME}}" -p "{{DOCKER_PASSWORD}}"
     - name: Copy file
