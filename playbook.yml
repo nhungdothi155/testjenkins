@@ -8,8 +8,11 @@
     - name: Install Docker
       apt:
         name:
-          - docker
-          - docker-compose
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+          - docker-buildx-plugin
+          - docker-compose-plugin
         state: present
         update_cache: 'yes'
     - name: Login DockerHub
